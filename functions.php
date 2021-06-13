@@ -10,6 +10,9 @@ function stream_files() {
 add_action('wp_enqueue_scripts', 'stream_files');
 
 function stream_features() {
+  register_nav_menu('primaryNavigation', 'Primary Navigation');
+  register_nav_menu('footerNavigationOne', 'Footer Navigation One');
+  register_nav_menu('footerNavigationTwo', 'Footer Navigation Two');
   add_theme_support('title-tag');
 }
 
